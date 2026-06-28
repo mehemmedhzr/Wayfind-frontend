@@ -1,26 +1,65 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --wf-bg: #0a0f1e;
+  --wf-bg-deep: #070b16;
+  --wf-surface: #111827;
+  --wf-surface-raised: #1a2235;
+
+  --wf-primary: #7c3aed;
+  --wf-primary-soft: #a855f7;
+  --wf-accent-pink: #ec4899;
+  --wf-provider: #f97316;
+  --wf-success: #10b981;
+  --wf-admin: #3b82f6;
+
+  --wf-text-primary: #f8fafc;
+  --wf-text-secondary: #aeb6c7;
+  --wf-text-muted: #5a6377;
+
+  --wf-border: rgba(255, 255, 255, 0.07);
+  --wf-border-strong: rgba(255, 255, 255, 0.1);
+
+  --wf-gradient-brand: linear-gradient(135deg, #7c3aed, #a855f7 50%, #f97316);
+  --wf-gradient-extended: linear-gradient(
+    100deg,
+    #7c3aed,
+    #a855f7,
+    #ec4899,
+    #f97316
+  );
+  --wf-gradient-logo: linear-gradient(135deg, #a855f7, #ec4899 55%, #f97316);
+
+  --wf-radius-sm: 8px;
+  --wf-radius-md: 12px;
+  --wf-radius-lg: 16px;
+  --wf-radius-xl: 18px;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-wf-bg: var(--wf-bg);
+  --color-wf-bg-deep: var(--wf-bg-deep);
+  --color-wf-surface: var(--wf-surface);
+  --color-wf-surface-raised: var(--wf-surface-raised);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-wf-primary: var(--wf-primary);
+  --color-wf-primary-soft: var(--wf-primary-soft);
+  --color-wf-accent-pink: var(--wf-accent-pink);
+  --color-wf-provider: var(--wf-provider);
+  --color-wf-success: var(--wf-success);
+  --color-wf-admin: var(--wf-admin);
+
+  --color-wf-text-primary: var(--wf-text-primary);
+  --color-wf-text-secondary: var(--wf-text-secondary);
+  --color-wf-text-muted: var(--wf-text-muted);
+
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-space-grotesk);
+  --font-mono: var(--font-space-mono);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--wf-bg);
+  color: var(--wf-text-primary);
+  font-family: var(--font-sans, "Inter", sans-serif);
 }
