@@ -29,7 +29,7 @@ export const studentNavigation: NavigationItem[] = [
     allowedRoles: [USER_ROLES.STUDENT],
   },
   {
-    label: "Rezervasiyalar",
+    label: "Bronlar",
     href: ROUTES.student.bookings,
     allowedRoles: [USER_ROLES.STUDENT],
   },

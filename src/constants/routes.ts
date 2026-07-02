@@ -18,13 +18,13 @@ export const ROUTES = {
     universitySearch: "/student/universities",
     savedUniversities: "/student/universities/saved",
     teachers: "/student/providers/teachers",
-    teacher: (id: string) => `/student/providers/teachers/${id}`,
+    teacher: (teacherId: string) => `/student/providers/teachers/${teacherId}`,
     consultants: "/student/providers/consultants",
     consultant: (id: string) => `/student/providers/consultants/${id}`,
     bookings: "/student/bookings",
     booking: (id: string) => `/student/bookings/${id}`,
-    messages: (bookingId: string) => `/student/messages/${bookingId}`,
-    review: (bookingId: string) => `/student/reviews/${bookingId}`,
+    // messages: (bookingId: string) => `/student/messages/${bookingId}`,
+    // review: (bookingId: string) => `/student/reviews/${bookingId}`,
   },
 
   provider: {
@@ -36,8 +36,8 @@ export const ROUTES = {
     editPackage: (id: string) => `/provider/packages/${id}/edit`,
     bookings: "/provider/bookings",
     booking: (id: string) => `/provider/bookings/${id}`,
-    messages: (bookingId: string) => `/provider/messages/${bookingId}`,
-    reviews: "/provider/reviews",
+    // messages: (bookingId: string) => `/provider/messages/${bookingId}`,
+    // reviews: "/provider/reviews",
   },
 
   admin: {
