@@ -5,24 +5,26 @@ export const ROUTES = {
 
   login: "/login",
   register: "/register",
+  registerStudent: "/register/student",
+  registerProvider: "/register/provider",
   forgotPassword: "/forgot-password",
 
   student: {
     dashboard: "/student/dashboard",
     profile: "/student/profile",
     profileEdit: "/student/profile/edit",
-    transcript: "/student/profile/transcript",
+    transcript: "/student/profile/transcript", //sidebara elave edilmeyib
     ai: "/student/ai",
     aiResults: "/student/ai/results",
-    roadmap: "/student/roadmap",
+    roadmap: "/student/roadmap", //sidebara elave edilmeyib
     universitySearch: "/student/universities",
     savedUniversities: "/student/universities/saved",
     teachers: "/student/providers/teachers",
     teacher: (teacherId: string) => `/student/providers/teachers/${teacherId}`,
     consultants: "/student/providers/consultants",
-    consultant: (id: string) => `/student/providers/consultants/${id}`,
+    consultant: (consultantId: string) => `/student/providers/consultants/${consultantId}`,
     bookings: "/student/bookings",
-    booking: (id: string) => `/student/bookings/${id}`,
+    booking: (bookingId: string) => `/student/bookings/${bookingId}`,
     // messages: (bookingId: string) => `/student/messages/${bookingId}`,
     // review: (bookingId: string) => `/student/reviews/${bookingId}`,
   },
@@ -30,12 +32,12 @@ export const ROUTES = {
   provider: {
     dashboard: "/provider/dashboard",
     profile: "/provider/profile",
-    verification: "/provider/verification",
+    verification: "/provider/verification", //sidebara elave edilmeyib
     packages: "/provider/packages",
     newPackage: "/provider/packages/new",
-    editPackage: (id: string) => `/provider/packages/${id}/edit`,
+    editPackage: (packageId: string) => `/provider/packages/${packageId}/edit`,
     bookings: "/provider/bookings",
-    booking: (id: string) => `/provider/bookings/${id}`,
+    booking: (bookingId: string) => `/provider/bookings/${bookingId}`,
     // messages: (bookingId: string) => `/provider/messages/${bookingId}`,
     // reviews: "/provider/reviews",
   },
@@ -45,10 +47,10 @@ export const ROUTES = {
     users: "/admin/users",
     providers: "/admin/providers",
     providerVerification: "/admin/providers/verification",
-    provider: (id: string) => `/admin/providers/${id}`,
-    successRecords: "/admin/success-records",
+    provider: (providerId: string) => `/admin/providers/${providerId}`,
+    successRecords: "/admin/success-records", //sidebara elave edilmeyib
     bookings: "/admin/bookings",
-    disputes: "/admin/disputes",
+    disputes: "/admin/disputes", //sidebara elave edilmeyib
     knowledgeBase: "/admin/knowledge-base",
     universities: "/admin/knowledge-base/universities",
     programs: "/admin/knowledge-base/programs",
