@@ -34,9 +34,10 @@ export default function RootLayout({
 }>) {
   return (
     <html
+      suppressHydrationWarning
       lang="az"
       className={`${inter.variable} ${spaceGrotesk.variable} ${spaceMono.variable} h-full antialiased`}
-      suppressHydrationWarning
+      
     >
       <body className="min-h-full flex flex-col bg-wf-bg text-wf-text-primary">
         {children}
