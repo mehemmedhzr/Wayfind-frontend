@@ -1,4 +1,4 @@
-import { UserRole } from "@/types";
+import type { UserRole } from "@/types";
 import RoleNavigation from "./RoleNavigation";
 
 type SidebarProps = {

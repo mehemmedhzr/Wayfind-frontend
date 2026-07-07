@@ -28,6 +28,16 @@
     #ec4899,
     #f97316
   );
+
+  --wf-student-menu: #a855f721;
+  --wf-student-menu-border: #a855f742;
+
+  --wf-provider-menu: #f9731621;
+  --wf-provider-menu-border: #f9731647;
+
+  --wf-admin-menu: #3b82f621;
+  --wf-admin-menu-border: #3b82f647;
+
   --wf-gradient-logo: linear-gradient(135deg, #a855f7, #ec4899 55%, #f97316);
 
   --wf-radius-sm: 8px;
@@ -56,6 +66,20 @@
   --font-sans: var(--font-inter);
   --font-heading: var(--font-space-grotesk);
   --font-mono: var(--font-space-mono);
+
+  --color-wf-gradient-brand: var(--wf-gradient-brand);
+  --color-wf-gradient-extended: var(--wf-gradient-extended);
+  --color-wf-gradient-logo: var(--wf-gradient-logo);
+
+  --color-wf-student-menu: var(--wf-student-menu);
+  --color-wf-student-menu-border: var(--wf-student-menu-border);
+
+  --color-wf-provider-menu: var(--wf-provider-menu);
+  --color-wf-provider-menu-border: var(--wf-provider-menu-border);
+
+  --color-wf-admin-menu: var(--wf-admin-menu);
+  --color-wf-admin-menu-border: var(--wf-admin-menu-border);
+
 }
 
 body {

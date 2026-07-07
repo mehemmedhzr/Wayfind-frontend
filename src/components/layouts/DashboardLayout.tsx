@@ -12,7 +12,7 @@ export default function DashboardLayout({children, role}: DashboardLayoutProps) 
         <div className="flex min-h-screen">
             <Sidebar role={role}/>
 
-            <div>
+            <div className="flex flex-col flex-1">
                 <DashboardHeader role={role}/>
 
                 <main className="flex-1 p-6 lg:p-10">
