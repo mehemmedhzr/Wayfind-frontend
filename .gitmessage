@@ -1,0 +1,37 @@
+# <type>(<scope>): <summary>  ← header, max 72 chars
+#
+# Example:
+#   feat(web): add spam folder note to waitlist success
+#
+# ── Allowed types ────────────────────────────────────────────────────
+#  feat      A new feature
+#  fix       A bug fix
+#  chore     Maintenance, dependency updates, tooling (no prod change)
+#  docs      Documentation only
+#  refactor  Code change that neither fixes a bug nor adds a feature
+#  perf      Performance improvement
+#  test      Adding or correcting tests
+#  style     Formatting, whitespace — no logic change
+#  ci        CI/CD configuration changes
+#  build     Build system or external dependency changes
+#  revert    Reverts a previous commit
+#
+# ── Common scopes ─────────────────────────────────────────────────────
+#  web       Next.js frontend app
+#  api       Backend / API layer
+#  shared    Shared utilities, types, constants
+#  infra     Infrastructure, deployment, environment config
+#
+# ── Body (optional) ───────────────────────────────────────────────────
+# Blank line required between header and body.
+# Explain WHY, not what — the diff shows what.
+# Wrap at ~72 columns. Use bullet points for multiple points:
+#
+#   - first reason
+#   - second reason
+#
+# ── Footer (optional) ─────────────────────────────────────────────────
+# BREAKING CHANGE: <description>
+# Closes #<issue>
+#
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
