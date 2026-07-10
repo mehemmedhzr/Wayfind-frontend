@@ -31,7 +31,7 @@ export const PROVIDER_TYPE_LABELS: Record<ProviderType, string> = {
 export const DEGREE_LEVEL_LABELS: Record<DegreeLevel, string> = {
   bachelor: "Bakalavr",
   master: "Magistr",
-  phd: "Doktorantura",
+  phd: "PhD",
 };
 
 export const VERIFICATION_STATUS_LABELS: Record<VerificationStatus, string> = {

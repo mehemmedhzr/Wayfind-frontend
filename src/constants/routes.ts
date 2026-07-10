@@ -13,6 +13,7 @@ export const ROUTES = {
     dashboard: "/student/dashboard",
     profile: "/student/profile",
     profileEdit: "/student/profile/edit",
+    profileEditStep: (step: string) => `/student/profile/edit/${step}`,
     transcript: "/student/profile/transcript", //sidebara elave edilmeyib
     ai: "/student/ai",
     aiResults: "/student/ai/results",
@@ -22,7 +23,8 @@ export const ROUTES = {
     teachers: "/student/providers/teachers",
     teacher: (teacherId: string) => `/student/providers/teachers/${teacherId}`,
     consultants: "/student/providers/consultants",
-    consultant: (consultantId: string) => `/student/providers/consultants/${consultantId}`,
+    consultant: (consultantId: string) =>
+      `/student/providers/consultants/${consultantId}`,
     bookings: "/student/bookings",
     booking: (bookingId: string) => `/student/bookings/${bookingId}`,
     // messages: (bookingId: string) => `/student/messages/${bookingId}`,
